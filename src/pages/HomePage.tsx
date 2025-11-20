@@ -7,21 +7,27 @@ const products: Product[] = [
     name: "Laptop Lenovo ThinkPad", 
     price: 3200, 
     image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&h=200&fit=crop", 
-    description: "Laptop empresarial robusta y confiable" 
+    description: "Laptop empresarial robusta y confiable", 
+    brand: "Lenovo",
+    rating: 4.5
   },
   { 
     id: 2, 
     name: "Mouse Inalámbrico", 
     price: 80, 
     image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=300&h=200&fit=crop", 
-    description: "Mouse ergonómico con buena batería" 
+    description: "Mouse ergonómico con buena batería",
+    brand: "Logitech",
+    rating: 4.2
   },
   { 
     id: 3, 
     name: "Teclado Mecánico", 
     price: 250, 
     image: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=300&h=200&fit=crop", 
-    description: "Ideal para programadores y gamers" 
+    description: "Ideal para programadores y gamers",
+    brand: "Razer",
+    rating: 4.7
   },
 ];
 

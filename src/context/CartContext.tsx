@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import type { Product } from '../types/product';
 
+// Usa la interfaz CartItem de tus tipos si existe, sino usa esta
 interface CartItem extends Product {
   quantity: number;
 }

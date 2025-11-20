@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface Service {
@@ -7,6 +8,7 @@ interface Service {
   features: string[];
   cta: string;
   path: string;
+  icon: string; // ✅ AGREGAR propiedad icon
 }
 
 const ServiciosPage: React.FC = () => {
@@ -17,7 +19,8 @@ const ServiciosPage: React.FC = () => {
       description: 'Tu dinero está seguro hasta que confirmes la recepción',
       features: ['Retención 7 días', 'Disputas 24h', 'Reembolso garantizado'],
       cta: 'Saber más',
-      path: '/servicios/compra-protegida'
+      path: '/servicios/compra-protegida',
+      icon: '🛡️' // ✅ AGREGAR icono
     },
     {
       id: 2,
@@ -25,7 +28,8 @@ const ServiciosPage: React.FC = () => {
       description: 'Recibe tus productos en 24-48 horas',
       features: ['Rastreo en tiempo real', 'Seguro incluido', 'Entrega sin contacto'],
       cta: 'Calcular costo',
-      path: '/servicios/envio'
+      path: '/servicios/envio',
+      icon: '🚚' // ✅ AGREGAR icono
     },
     {
       id: 3,
@@ -33,7 +37,8 @@ const ServiciosPage: React.FC = () => {
       description: 'Tecnología Stripe con encriptación',
       features: ['PCI DSS compliance', 'Sin almacenar datos', '3D Secure'],
       cta: 'Métodos de pago',
-      path: '/servicios/pagos'
+      path: '/servicios/pagos',
+      icon: '💳' // ✅ AGREGAR icono
     },
     {
       id: 4,
@@ -41,7 +46,8 @@ const ServiciosPage: React.FC = () => {
       description: 'Protege tu compra hasta 12 meses adicionales',
       features: ['Cobertura total', 'Soporte técnico', 'Reemplazo inmediato'],
       cta: 'Activar garantía',
-      path: '/servicios/garantia'
+      path: '/servicios/garantia',
+      icon: '📦' // ✅ AGREGAR icono
     },
     {
       id: 5,
@@ -49,7 +55,8 @@ const ServiciosPage: React.FC = () => {
       description: 'Ayuda personalizada cuando la necesites',
       features: ['WhatsApp directo', 'Chat en vivo', 'Respuesta 15 min'],
       cta: 'Contactar ahora',
-      path: '/servicios/soporte'
+      path: '/servicios/soporte',
+      icon: '📞' // ✅ AGREGAR icono
     },
     {
       id: 6,
@@ -57,7 +64,8 @@ const ServiciosPage: React.FC = () => {
       description: 'Suscripción premium con beneficios exclusivos',
       features: ['Envíos gratis ilimitados', '5% cashback', 'Acceso anticipado'],
       cta: 'Suscribirme',
-      path: '/servicios/plus'
+      path: '/servicios/plus',
+      icon: '⭐' // ✅ AGREGAR icono
     }
   ];
 
@@ -118,5 +126,4 @@ const ServiciosPage: React.FC = () => {
   );
 };
 
-// ⭐⭐⭐ ESTA LÍNEA ES OBLIGATORIA ⭐⭐⭐
 export default ServiciosPage;

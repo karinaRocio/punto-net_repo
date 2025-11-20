@@ -14,10 +14,26 @@ class ProductService {
     // const response = await fetch(`${API_URL}/products`);
     // return response.json();
 
-    // Simulación con productos mock (reemplaza con tu lógica actual)
+    // Simulación con productos mock (actualizados con brand y rating)
     return [
-      { id: 1, name: 'Producto Premium', price: 29.99, image: '/img1.jpg' },
-      { id: 2, name: 'Producto Deluxe', price: 49.99, image: '/img2.jpg' },
+      { 
+        id: 1, 
+        name: 'Producto Premium', 
+        price: 29.99, 
+        image: '/img1.jpg',
+        description: 'Descripción del producto premium',
+        brand: 'Marca Premium',
+        rating: 4.5
+      },
+      { 
+        id: 2, 
+        name: 'Producto Deluxe', 
+        price: 49.99, 
+        image: '/img2.jpg',
+        description: 'Descripción del producto deluxe', 
+        brand: 'Marca Deluxe',
+        rating: 4.8
+      },
     ];
   }
 

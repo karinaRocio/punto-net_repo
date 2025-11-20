@@ -7,3 +7,16 @@ export interface Product {
   brand: string;
   rating: number;
 }
+
+export interface CartItem extends Product {
+  quantity: number;
+}
+
+export interface ShippingInfo {
+  address: string;
+  city: string;
+  postalCode: string;
+  country: string;
+}
+
+
