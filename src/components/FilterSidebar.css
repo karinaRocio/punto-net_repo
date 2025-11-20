@@ -1,0 +1,75 @@
+/* src/components/FilterSidebar.css */
+
+.filter-sidebar {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  height: fit-content;
+  position: sticky;
+  top: 100px; /* Debajo del navbar */
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section:last-child {
+  margin-bottom: 0;
+}
+
+.filter-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--bs-dark);
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-check {
+  margin: 0;
+  padding-left: 1.75rem;
+}
+
+.form-check-input {
+  cursor: pointer;
+  margin-left: -1.75rem;
+}
+
+.form-check-label {
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  user-select: none;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .filter-sidebar {
+    position: static; /* No sticky en mobile */
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+
+  .filter-header {
+    margin-bottom: 1rem;
+  }
+
+  .filter-section {
+    margin-bottom: 1.25rem;
+  }
+}

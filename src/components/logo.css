@@ -1,0 +1,31 @@
+/* src/components/Logo.css */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo__image {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo__tagline {
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.logo--sm .logo__image { height: 32px; }
+.logo--lg .logo__image { height: 56px; }
+
+.logo--light { color: white; }
+.logo--dark { color: var(--bs-dark); }

@@ -1,0 +1,70 @@
+/* src/pages/ProductosPage.css */
+
+/* Contenedor fluido con max-width */
+.container-xl {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--bs-secondary);
+}
+
+/* Header de productos */
+.d-flex h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--bs-dark);
+}
+
+/* Grid de productos */
+.row-cols-lg-3 > * {
+  flex: 0 0 auto;
+  width: 33.333333%;
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+  .container-xl {
+    padding: 0 1rem;
+  }
+
+  .d-flex h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-select {
+    width: 100% !important;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-flex h1 {
+    font-size: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
