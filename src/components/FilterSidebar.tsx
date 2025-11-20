@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './FilterSidebar.css';
 
 interface FilterSidebarProps {
