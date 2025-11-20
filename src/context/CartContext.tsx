@@ -1,7 +1,7 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import type { ReactNode } from 'react'; // ✅ Importación correcta para tipos
 import type { Product } from '../types/product';
 
-// Usa la interfaz CartItem de tus tipos si existe, sino usa esta
 interface CartItem extends Product {
   quantity: number;
 }

@@ -1,5 +1,4 @@
-import { CartItem } from '../types/product';
-import { ShippingInfo } from '../context/CartContext';
+import type { CartItem, ShippingInfo } from '../types/product'; // ✅ Importar desde types
 
 export interface Order {
   id: string;
